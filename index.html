@@ -10,6 +10,25 @@
 <script type="text/javascript" src="../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
 <script type="text/javascript" src="../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
 
+<script>
+  if(typeof param == 'undefined') {
+    var param = {};
+  }
+  if (location.host.indexOf("georgia.org" || 
+    (location.host.indexOf('localhost') >= 0 && navigator && navigator.brave) >= 0)) {
+    param.state = "GA";
+  } else {
+    param.state = "NY";
+  }
+</script>
+
+<script type="text/javascript" src="../localsite/js/localsite.js?indicators=ENRG,JOBS,NNRG,RNRG,VADD&display=everything&state=GA"></script>
+
+
+<script>
+  loadMarkdown("apps.md", "readmeDiv", "_parent");
+</script>
+
 <style>
 .bgimg {
   min-height: 600px;
@@ -18,13 +37,11 @@
   font-size: 24px;
   max-width: 300px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 </style>
 
-<script>
-  loadMarkdown("apps.md", "readmeDiv", "_parent");
-</script>
+
 
 </head>
 
@@ -36,14 +53,14 @@
     <!--Later: Choose two states to compare.-->
     <div style="font-size:18px; margin-bottom:10px; font-weight:600">Choose a State</div>
     <div id="relocatedStateMenu"></div><br>
-    <a href="#select=counties" onclick="$('#filterClickLocation').click();return false;">Select Counties and Regions</a>
+    <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select Counties and Regions</a>
 
     <br><br>
 
     <b>Create a Community App Page</b>
     - Get started by <a href="https://github.com/modelearth/localsite/">forking the localsite repo</a> and the <a href="https://github.com/modelearth/apps/">apps repo</a>. You can copy the apps <a href="base/">base folder</a> or update an existing apps folder. View your work <a href="../localsite/start/">locally</a>.  Share your updates on GitHub and submit a pull request (PR) for us to merge back into the main apps repo.<br><br>
 
-    <b>App Development</b>
+    <b>Community Pages</b>
     <div id="readmeDiv"></div>
 
     <div id="parsedOutput"></div>
@@ -51,8 +68,6 @@
   </div>
 
 </div>
-
-<script type="text/javascript" src="../localsite/js/localsite.js?state=NY&indicators=ENRG,JOBS,NNRG,RNRG,VADD&display=everything"></script>
 
 </body>
 </html>

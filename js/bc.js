@@ -25,7 +25,7 @@ $(document).ready(function() {
 var stateDataset = [];
 function loadHtmlTable(applyFilter) {
   //alert("loading")
-  d3.text("5_22-data-06_06.csv").then(function(data) {
+  d3.text("/apps/beyondcarbon/5_22-data-06_06.csv").then(function(data) {
       stateDataset = d3.csvParseRows(data);
       console.log("loadHtmlTable - stateDataset row count: " + stateDataset.length);
       //alert(stateDataset);
@@ -70,6 +70,7 @@ function displayStateData(theStateName) {
     if (stateDataset[i][0]==theStateName) {
       
       dataRow += "<table id='resultsTable'>";
+      dataRow += "<tr><td><div style='float:left;font-size:24px;font-weight:400'>" + theStateName + " Clean Energy Progress</div><div style='float:right;font-size:11px'>Source: <a target='_blank' href='https://beyondcarbon.org'>BeyondCarbon.org</a></div></td></tr>"
       dataRow += "<tr><td>" + statePhrase(stateDataset[i], 5, theStateName) + "</td></tr>"
       dataRow += "<tr><td>Has " + theStateName + " committed to 100% clean energy? " + statePhrase(stateDataset[i], 1, theStateName) + "</td></tr>"
       dataRow += "<tr><td>" + statePhrase(stateDataset[i], 2, theStateName)  + "</td></tr>"

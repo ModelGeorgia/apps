@@ -13,11 +13,25 @@
 <script type="text/javascript" src="../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
 
 <!-- Set custom app values in the following include file parameters -->
-<script type="text/javascript" src="../../localsite/js/localsite.js?display=everything&lat=37&lon=-95.7&set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS,ENRG,JOBS,VADD,WATR"></script>
+<script type="text/javascript" src="../../localsite/js/localsite.js?display=everything&state=IA&lat=37&lon=-95.7&set=air&indicators=GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS,ENRG,JOBS,VADD,WATR"></script>
+
+<!-- Set custom app values -->
+<script>
+    //param.titleArray = ["Your","Community"]
+    //param.startTitle = "Your Community"
+    //param.headerLogo = "<img src='/apps/smm/img/epa-header-logo.png' style='width:280px'>";
+    //param.headerFile = "header.html"
+    //param.footer = "footer.html"
+</script>
 
 <!-- Interactive state menu - Display beyond carbon table -->
 <script type="text/javascript" src="../js/bc.js" id="/apps/js/bc.js"></script>
 
+<style>
+  .btn {
+    font-weight: 600;
+  }
+</style>
 </head>
 
 
@@ -31,20 +45,23 @@
 <div class="content contentpadding" style="padding-top:60px">
   <div class="hero-text">
 
-    <div style="font-size:60px; line-height: 1em; font-weight:800">Add Your<br>Community</div><br>
-    <div style="font-size:32px; line-height: 1em; font-weight:400">
-      Sustainable<br>Communities<br>
-      Web Challenge
+    <div style="font-size:60px; line-height: 1em; font-weight:800">Your<br>Community</div><br>
+    <div style="font-size:32px; line-height: 1.2em; font-weight:400">
+      Copy and add<br>your local settings
     </div><br>
 
     <div style="font-size:20px; line-height: 1.2em;">
-      
-      <div style="font-size:25px;">Saturday, Oct 2, 2021</div><br> 
+      <br>
 
       <div style="font-size:18px;">
-      <a href="../../io/template/" class="btn btn-primary" style="text-shadow: none; border:2px solid #ddd">Impact Profile Templates</a><br>
 
-      <a href="../../community/challenge/" class="btn btn-success" style="text-shadow: none; border:2px solid #ddd">Join the Challenge</a><br> 
+      <a href="../../community/challenge/" class="btn btn-success" style="text-shadow: none; border:2px solid #ddd">Join the Web Challenge</a><br> 
+
+      <a href="../../community/challenge/how/" class="btn btn-primary" style="text-shadow: none; border:2px solid #ddd">How to Create a Winning Entry</a><br>
+
+      <a href="../../community/projects/" class="btn btn-warning" style="text-shadow: none; border:2px solid #ddd">Project Coding and Design Areas</a><br>
+
+      
       </div>
 
       <br>
@@ -53,48 +70,43 @@
 
   <div id="hero-rect-new" style="max-width: 680px; float:left">
     <!--Later: Choose two states to compare.-->
-    <div style="font-size:22px; margin-bottom:10px; font-weight:400">Choose a state</div>
-    Find out where your state (and county) ranks in combating climate change.<br>
+    <div style="font-size:22px; margin-top:14px; margin-bottom:18px; font-weight:500">Getting Started...</div>
+
+    1. Find out where your state and county ranks in combating climate change.<br><br>
     <div id="relocatedStateMenu"></div><br>
-    
-    <div id="dataHeader"></div>
-    <div id="dataDisplay"></div>
+
+    2. Select one of the six main impact areas below. Air, Water, Land, Energy...<br><br>
+
+    3. Choose one or more commodities in the center column<br><br>
+
+    4. Adjust sliders to view potential impacts to input and output levels.<br><br>
+
+    5. Save your settings in your copy of this index.html page.<br><br>
+
 
     <div id="choose-counties" style="display:none">
-      <a href="#select=counties" onclick="$('#filterClickLocation').click();return false;">Select one or more counties</a><br>
-    </div>
-
-    <div id="about-profile" style="display:none">
-
-      <b>Challenge Statement:</b><br>
-      How does my company, school, city and state achieve net zero carbon emissions?<br><br>
-
-      <a href="https://BeyondCarbon.org">State ranking data from Bloomberg’s BeyondCarbon.org</a> - 
-      "Climate scientists have said that in order to avoid the worst possible outcomes, we must decarbonize our entire global economy by mid-century. In order to move the United States toward a 100% clean energy economy we must:"
-
-      <ul>
-        <li>Transition to 100% clean power</li>
-        <li>Replace oil burning cars and trucks with electric vehicles</li>
-        <li>Eliminate building emissions</li>
-        <li>Modernize industry and infrastructure</li>
-      </ul>
-
-
-
+      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select one or more counties</a><br>
     </div>
 
   </div>
 
 </div>
 
-
-
 <div style="clear:both">
 </div>
 
+<br><br><br>
+
+<div class="content contentpadding">
+    <div id="dataHeader"></div>
+    <div id="dataDisplay"></div>
+</div>
+
+
+
 <div id="readmeDiv"></div>
 
-<br><br><br>
+
 
 </body>
 </html>

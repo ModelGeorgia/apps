@@ -33,16 +33,14 @@ Photo by <a href="https://unsplash.com/@studiodenley?utm_source=unsplash&utm_med
 
       <div style="font-size:18px; margin-bottom:10px; font-weight:600">Choose a state</div>
       <div id="relocatedStateMenu"></div><br>
-      <a href="#select=counties" onclick="$('#filterClickLocation').click();return false;">Select Counties and Regions</a>
+      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select Counties and Regions</a>
     </div>
 
   </div>
 </div>
 
 <script type="text/javascript" src="../../localsite/js/localsite.js?show=vehicles&display=everything&indicators=JOBS,VADD,ENRG,NNRG,RNRG&state=GA&regiontitle=West+Central+Georgia&lat=33.0362&lon=-85.0322&zoom=14"></script>
-<!--
-  
--->
+
 
 <!--
 Probably need to use javascript to jump down, or resolve why URL is reset.  Try detecting just the #industries part of the URL to use as anchor 
@@ -52,6 +50,8 @@ Probably need to use javascript to jump down, or resolve why URL is reset.  Try 
   <b>Parts Manufacturing</b> | <a href="#industries&show=vehicles&display=everything&indicators=JOBS,VADD,ENRG,NNRG,RNRG&state=GA&regiontitle=West+Central+Georgia">Industries by County</a>  |  <a href="#supply">Supply Chain</a>  |  <a href="#impact">Impact Levels</a> | <a href="../../localsite/map/recycling/ga/">B2B Recycling</a>
 </div>
 -->
+
+<div id="bodyFile"></div>
 
 </body>
 </html>
