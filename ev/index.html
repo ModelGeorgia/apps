@@ -5,16 +5,22 @@
 <title>Electric Vehicle Ecosystems</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<script type="text/javascript" src="../../localsite/js/localsite.js"></script>
+<script>
+if(typeof param=='undefined'){ var param={}; }
+param.state = "GA"
+param.show = "vehicles"
+param.display = "everything"
+param.indicators = "JOBS,VADD,ENRG,NNRG,RNRG"
+param.regiontitle = "West Central Georgia"
+param.lat = "33.0362"
+param.lon = "-85.0322"
+param.zoom = 14
+</script>
 
 <style>
 .filterbarOffset {
   display: none;
-}
-#state_select {
-  font-size: 24px;
-  max-width: 300px;
-  padding: 10px;
-  border-radius: 10px;
 }
 </style>
 
@@ -27,19 +33,21 @@ Photo by <a href="https://unsplash.com/@studiodenley?utm_source=unsplash&utm_med
 -->
 
 <div class="displayOnload" style="display:none">
-  <div class="bgimg" style="min-height: 600px; background-position: 0 54px; background-image: url('img/hero/andrew-roberts-charging-crop.jpg');">
+  <div id="hero_holder">
+    <div class="bgimg" style="min-height: 600px; background-position: 0 54px; background-image: url('img/hero/andrew-roberts-charging-crop.jpg');">
 
-    <div id="hero-rect">
+      <div id="hero-rect">
 
-      <div style="font-size:18px; margin-bottom:10px; font-weight:600">Choose a state</div>
-      <div id="relocatedStateMenu"></div><br>
-      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select Counties and Regions</a>
+        <div style="font-size:18px; margin-bottom:10px; font-weight:600">Choose a state</div>
+        <div id="relocatedStateMenu"></div><br>
+        <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select Counties and Regions</a>
+      </div>
+
     </div>
-
   </div>
 </div>
 
-<script type="text/javascript" src="../../localsite/js/localsite.js?show=vehicles&display=everything&indicators=JOBS,VADD,ENRG,NNRG,RNRG&state=GA&regiontitle=West+Central+Georgia&lat=33.0362&lon=-85.0322&zoom=14"></script>
+
 
 
 <!--
