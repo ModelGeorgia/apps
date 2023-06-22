@@ -54,11 +54,16 @@
 .bgimg {
   background-image: url(https://model.earth/us-states/images/backgrounds/1280x720/landscape/south-dakota.jpg);
 }
+
+@media (max-width: 1000px) {
+  #hero-mini {
+      display: none;
+  }
+}
 </style>
 
 <div id="hero_holder">
 <div id="hero-landscape-image" class="bgimg displayOnload" style="display:none; background-position: 0 54px;">
-
 
   <div id="hero-content">
 
@@ -66,10 +71,23 @@
     <div style="font-size:54px; line-height: 1.1em; color: #fff; font-weight:800; text-shadow: 2px 2px 6px #333;">State Impact Tools</div><br>
     -->
 
-    <div id="hero-mini" style="max-width:140px;padding-bottom:12px">
+    <!-- why does this get updated to the state name in apps/base, but not here? -->
 
+    <!--
+      To investigate (note from js/bc.js):
+      // Within localhost.js the state menu is moved into the hero image area by the following:
+      // relocatedStateMenu.appendChild(state_select);
+    -->
+    <div id="stateName" class="hero-title" style="font-size:48px; font-weight:300">Location Models</div>
+    <div class="location_titles"></div><!-- Counties within state -->
+    <br>
+
+    <div id="hero-mini" class="hideMobile" style="max-width:150px;padding-bottom:12px">
+
+      <!--
       <b style="margin-bottom:8px; display:block; padding-top:12px; padding-left:18px">Impacts</b>
-      <div id="impact-widget-vertical">
+      -->
+      <div id="impact-widget-vertical" style="padding-top:8px">
         <div id="insertImpactIcons"></div>
       </div>
 
@@ -77,20 +95,19 @@
 
     <div id="hero-rect" class="displayOnload" style="display: none; margin-right:30px">
       
-      <div style="padding:0px;margin:0px;margin-bottom:15px;font-size:24px" class="hero-title">Community Start Pages</div>
+      
       
       <div id="relocatedStateMenu"></div><br>
-      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select counties and regions</a> to view local industry impacts<!--a href="#impact"></a-->
+      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select counties and regions</a> to view local industry impacts.<br>
 
-      <br><br>
+      <h3>Getting Started</h3><b>Setup a website to manage your models and stories</b><br>
+      <a href="../localsite/start/">Copy the starter page</a>&nbsp;or&nbsp;edit a folder in the apps repo.<br><br>
 
-      <b>Create a Dev Environment</b><br>
-      <a href="../localsite/start/">Setup your local webroot and fork repos</a>. Copy or edit a folder in the apps repo. Deploy your updates using GitHub Desktop. More about contributing to <a href="../../community/challenge/how/">local site pages</a>.<br><br>
+      Deploy your updates using GitHub Desktop.<br>
+      More about contributing to <a href="../../community/challenge/how/">location&nbsp;model&nbsp;pages</a>.<br><br>
 
 
       <div id="readmeDiv"></div>
-
-      
 
       <a href="../community/projects/">Project Areas</a> | <a href="../community/tools/">Lifecycle Tools Overview</a> | <a href="../../community/challenge/#winners">Web Challenge Winners</a>
 
@@ -112,7 +129,6 @@ https://www.purpleair.com/pa.widget.js?key=WQDIG1WBX2S88N2Q&module=AQI&conversio
 <script src='https://www.purpleair.com/pa.widget.js?key=WQDIG1WBX2S88N2Q&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_57441_module_AQI_conversion_C0_average_10_layer_standard'></script>
 -->
 
-<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css" />
 </body>
 </html>
 
