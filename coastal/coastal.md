@@ -22,7 +22,7 @@ https://www.pinovasolutions.com/our-heritage
 Clean waste-to-energy projects capture carbon from a vaiety of feedstocks.  
 
 <h3 style="margin-bottom:0px">Activated Carbon from Lignin Waste</h3>
-(from paper, rayon and superwood&nbsp;production)
+(Recycled from the production of paper, rayon and&nbsp;superwood)
 
 [A 2016 study](http://wcponline.com/2016/06/15/lignin-waste-transformed-coconut-like-activated-carbon/) found that lignin provides a coconut-like activated carbon  structure that is two to three times more valuable than activated carbon from wood. Like coconut, lignin has tighter graphitic platelet spacings to remove more small molecules from drinking water. Activated carbon from lignin is softer than from coconut shells, which allows it to be used as a powder for faster absorption of contaminants, with less water-leaching ash than other powdered-activated carbons.  
 
@@ -40,9 +40,7 @@ Step 3: Activate with 800° to 950°C 15-psi steam to add pores.
 
 Filtering pollution from water using [Activated Carbon from PET bottles](https://www.semanticscholar.org/paper/Preparation-of-high-quality-activated-carbon-from-Mendoza-Carrasco-Cuerda-Correa/f7f362eb4db7ba5f1ab45ebb7d948d16895a76fc).  
 
+<a href="img/side/ocean-plastic.jpg"><img src="img/side/ocean-plastic.jpg" style="width:100%; opacity: 1; max-width:400px"></a>
+		<div style="clear:both; margin-bottom:12px"></div>
 
-## Environmentally-Enabled Input-Output (EEIO)&nbsp;Tools  
-
-The US EPA and Georgia Economic Development are partnering with southeast Georgia communities to create website tools for weighing environmental impacts and attracting new businesses. 
-[model.georgia.org](https://model.georgia.org/)
 
