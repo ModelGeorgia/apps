@@ -1,3 +1,4 @@
+[Footprint Builder](/io/template)
 # Community Footprints
 
 ## About zip code (ZCTA) Impacts
