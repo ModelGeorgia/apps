@@ -44,17 +44,21 @@
       id="/apps/js/apps-impact.js"
     ></script>
 
+<!-- Tried adding for hero menu of 6 sets, but still need everything -->
+<link rel="stylesheet" href="/localsite/css/fonts/materialicons/icon.css" id="/localsite/css/fonts/materialicons/icon.css">
+<link id="/buiwidgets.css" rel="stylesheet" type="text/css" href="/io/build/widgets.css" media="all">
+
     <!-- Set custom app values -->
     <script>
       if (typeof param == "undefined") {
         var param = {};
       }
-      param.display = "everything";
-      param.lat = 37;
-      param.lon = -95.7;
-      param.state = "NY";
-      param.set = "air";
-      param.indicators = "GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS";
+      //param.display = "everything";
+      //param.lat = 37;
+      //param.lon = -95.7;
+      //param.state = "NY";
+      //param.set = "air";
+      //param.indicators = "GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS";
       // More params: https://model.earth/localsite
 
       // Shared Sections menu
@@ -84,16 +88,13 @@
       });
     </script>
 
-    <script
-      type="text/javascript"
-      src="../../localsite/js/localsite.js"
+    <script type="text/javascript" src="../../localsite/js/localsite.js"
     ></script>
 
     <script>
       // If edits to your README.md don't appear, clear your cache for prior 24 hours.
       // Don’t clear more than 24hrs or you’ll wipe out your saved passwords and cookie settings.
       loadMarkdown("README.md", "readmeDiv", "_parent");
-      loadMarkdown("ABOUT.md", "aboutDiv", "_parent");
 
       //renderImpactWidget();
     </script>
@@ -135,7 +136,9 @@ Another option is to rename the css snipped above to #hero-landscape-image-local
 The hidden hero images are displayed once localsite/css/base.css loads. 
 The .displayOnload divs are displayed when the base.css file loads. This prevents the page from flickering while loading.
 -->
-    <div id="hero_holder">
+
+  <!-- remove display non here, then try to remove the use of everything param -->
+    <div id="hero_holder" style="display: none;">
       <div
         id="hero-landscape-image"
         class="bgimg displayOnload"
@@ -165,6 +168,7 @@ The .displayOnload divs are displayed when the base.css file loads. This prevent
             </div>
           </div>
 
+          <!--
           <div id="hero-rect" style="max-width: 740px; float: left">
             <div
               style="
@@ -188,6 +192,7 @@ The .displayOnload divs are displayed when the base.css file loads. This prevent
               ><br />
             </div>
           </div>
+          -->
 
           <div
             id="hero-mini" class="hideMobile"
@@ -206,16 +211,29 @@ The .displayOnload divs are displayed when the base.css file loads. This prevent
     <div style="clear: both"></div>
 
     <div class="content contentpadding">
+
+      <div class="floatRight">
+      <!--
+      [![New York State](zctaimpacts_ny_small.png)](zctaimpacts_ny_full.png)
+      -->
+      <a href="zctaimpacts_ny_full.png"><img src="zctaimpacts_ny_small.png"></a><br>
+      &nbsp; Screenshot of state lable from the ZCTA Impacts app.
+      </div>
+
+      <div style="overflow: auto; margin-right:30px">
       <div id="readmeDiv"></div>
+      </div>
 
       <div id="dataHeader"></div>
       <div id="dataDisplay"></div>
       <br />
 
+      <!--
       <h2>Shared Sections</h2>
       <div id="menuImages" style="display: none"></div>
       <div style="clear: both"></div>
       <br />
+      -->
 
       <div id="aboutDiv"></div>
     </div>
