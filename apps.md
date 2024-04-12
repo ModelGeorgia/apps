@@ -1,5 +1,6 @@
+<b>Setup a website to manage your models and stories</b>
+<a href="../localsite/start/">Copy the starter page</a>&nbsp;or&nbsp; [clone and work locally](../localsite/start/steps/).
+<!--
+More about contributing to <a href="../../community/challenge/how/">location&nbsp;model&nbsp;pages</a>.
+-->
 [Base Starter Folder](base/) - Copy to create your page and [edit parameters](../localsite/#parameters) 
-[Carbon Cycle](carbon/) - Combining Wikipedia, Bloomberg and EPA data  
-[Coastal Recycling](coastal/) - Southeast Georgia - Activated Carbon  
-[EV Manufacturing](ev/) - LaGrange Georgia - Automotive Industries 
-[Lifecycle Tools 3.0](smm/) - Concepts for upcoming USEEIO widgets

@@ -16,7 +16,6 @@
 <script>
   if(typeof param=='undefined'){ var param={}; }
   param.display = "everything"
-  //param.state = "SD"
   param.indicators = "GHG,GCC,MGHG,OGHG,HRSP,OZON,SMOG,HAPS,ENRG,WATR"
 
   // App menu
@@ -31,7 +30,7 @@
   menu.biodiesel.img = "/apps/school/img/hero/biodiesel.jpg"
   menu.biodiesel.page = "/apps/biodiesel/"
 
-  showHeroMenu("feature", menu, "my_site")
+  showHeroMenu("feature", menu, "my_site");
   $(document).ready(function() {
     showImpactWidget("land", menu, "my_site")
   });
@@ -41,7 +40,6 @@
 </head>
 
 <body>
-
 <style>
 .bgimg {
   min-height: 600px;
@@ -99,12 +97,6 @@
 
       <a href="../community/projects/">Project Areas</a> | <a href="../community/tools/">Lifecycle Tools Overview</a> | <a href="../../io/charts/">Widget Setup</a>
       <!--<a href="../../community/challenge/#winners">Web Challenge Winners</a>--><br><br>
-
-      <b>Setup a website to manage your models and stories</b><br>
-      <a href="../localsite/start/">Copy the starter page</a>&nbsp;or&nbsp;copy a folder here in the apps repo.<br><br>
-
-      Deploy your updates using GitHub Desktop.<br>
-      More about contributing to <a href="../../community/challenge/how/">location&nbsp;model&nbsp;pages</a>.<br><br>
 
       <div id="readmeDiv"></div>
 
