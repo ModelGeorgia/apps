@@ -3,4 +3,4 @@
 <!--
 More about contributing to <a href="../../community/challenge/how/">location&nbsp;model&nbsp;pages</a>.
 -->
-[Base Starter Folder](base/) - Copy to create your page and [edit parameters](../localsite/#parameters) 
+[Base Starter Folder](base/) - Copy to create your page and [edit parameters](../localsite/) 
