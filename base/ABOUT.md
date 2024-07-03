@@ -2,8 +2,8 @@
 
 **Overview**
 
-Tell us about your content.
+Quick intro
 
 **Details**
 
-What other content does the new content tie into?
+Elaborate
