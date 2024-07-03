@@ -138,7 +138,11 @@ function loadLocationStats(hash) {
 }
 
 function stateInsert(stateText, theStateName) {
-  return(stateText.replace("[XX]" || "[XX's]", theStateName) )
+  if (!stateText) {
+    return(theStateName);
+  } else {
+    return(stateText.replace("[XX]" || "[XX's]", theStateName) )
+  }
 }
 function displayStateImpact(hash,stateImpact) {
 
@@ -150,7 +154,6 @@ function displayStateImpact(hash,stateImpact) {
   //alert("theStateName " + theStateName);
   if (theStateName.length <= 0) {
     //alert("No state")
-    $("#about-profile").show();
     $("#choose-counties").hide();
     $("#dataDisplay").hide();
     return;
@@ -159,10 +162,7 @@ function displayStateImpact(hash,stateImpact) {
     $("#choose-your-state-intro").hide();
     $("#choose-counties").show();
   }
-  $("#about-profile").hide();
   
-  
-
   let dataRow = "";
 
   console.log("stateImpact");
@@ -220,8 +220,6 @@ function statePhrase(stateRow, rowIndex, theStateName) {
 function displayStateImpactXXX(theStateName) {
   alert("displayStateImpact: " + theStateName);
   if (theStateName.length <= 0) {
-    //alert("test")
-    $("#about-profile").show();
     $("#choose-counties").hide();
     $("#dataDisplay").hide();
     return;
@@ -229,7 +227,6 @@ function displayStateImpactXXX(theStateName) {
     $("#choose-your-state-intro").hide();
     $("#choose-counties").show();
   }
-  $("#about-profile").hide();
   
   $("#dataDisplay").show();
 
