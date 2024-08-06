@@ -1,6 +1,8 @@
 [Footprint Builder](/io/template)
 # Community Footprints
 
+View our latest [OpenFootprint Data Panels](/openfootprint)
+
 ## About zip code (ZCTA) Impacts
 
 Fork our fork from [https://github.com/modelearth/ZCTAImpacts](https://github.com/modelearth/ZCTAImpacts).
