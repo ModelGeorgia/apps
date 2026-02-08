@@ -72,7 +72,7 @@
       // relocatedStateMenu.appendChild(state_select);
     -->
     <div id="stateName" class="hero-title" style="font-size:48px; font-weight:300">Location Modeling</div>
-    <div class="location_titles"></div><!-- Counties within state -->
+    
     <br>
 
     <div id="hero-mini" class="hideMobile" style="max-width:150px;padding-bottom:12px">
@@ -90,13 +90,12 @@
       
       <div id="relocatedStateMenu"></div>
 
-      <h3>Getting Started</h3>
-
-      <a href="../projects/">Active Projects</a> | <a href="../localsite/start/">Starter Page</a><br><br>
-
+      <div style="margin-bottom:10px; max-width:400px">
+        <div class="location_titles"></div><!-- Counties within state -->
+      </div>
       <div id="readmeDiv"></div>
 
-      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select states, counties and regions</a> to view local industry impacts.<br>
+      <a href="#mapview=counties" onclick="$('#filterClickLocation').click();return false;">Select counties</a> to view local industry impacts.<br>
 
       <div id="parsedOutput"></div>
 
